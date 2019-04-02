@@ -3,7 +3,7 @@
 
 
 ## How to Download Project
-Create any directory and run this command in it.
+#### Create any directory and run this command in it.
 git clone https://github.com/Vineetsingh07/Assignment.git
 
 
