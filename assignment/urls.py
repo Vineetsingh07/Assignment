@@ -21,7 +21,7 @@ from users_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', views.UsersList.as_view()),
+    path('', views.UsersList.as_view()),
     path('api/users/', views.UsersList.as_view()),
     path('api/users/create/', views.UserCreate.as_view()),
     path('api/users/<int:pk>/', views.UserDetail.as_view()),
