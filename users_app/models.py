@@ -2,7 +2,6 @@ from django.db import models
 
 
 class User(models.Model):
-    user_id = models.IntegerField()
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     company_name = models.CharField(max_length=100)
