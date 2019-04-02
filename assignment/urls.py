@@ -21,6 +21,10 @@ from users_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('users/', views.UsersList.as_view()),
+    path('api/users/', views.UsersList.as_view()),
+    path('api/users/create/', views.UserCreate.as_view()),
+    path('api/users/<int:pk>/', views.UserDetail.as_view()),
+    path('api/users/<int:pk>/edit/', views.UserUpdate.as_view()),
+    path('api/users/<int:pk>/del/', views.UserDelete.as_view()),
 
 ]
